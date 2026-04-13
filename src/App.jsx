@@ -3,29 +3,29 @@ export default function RahulPoddarPortfolio() {
     {
       title: "AI Log Analyzer",
       summary:
-        "LLM-powered backend tool that analyzes application logs, summarizes probable root causes, and suggests likely fixes to accelerate debugging and production support workflows.",
-      stack: ["Spring Boot", "OpenAI API", "Java", "REST APIs"],
-      status: "AI Project",
-      github: "#",
-      cta: "View Code"
+        "AI-powered backend system that converts noisy application logs into structured root-cause insights. Processes raw logs and uploaded files using deterministic preprocessing to extract high-signal error segments before invoking LLMs, reducing token usage and improving analysis accuracy.",
+      stack: ["Spring Boot", "Java", "OpenAI API", "Spring AI", "REST APIs"],
+      status: "AI + Backend",
+      github: "https://github.com/rpoddar05/ai-log-analyzer",
+      cta: "View Repository"
     },
     {
       title: "AI API Assistant",
       summary:
-        "AI-assisted developer productivity tool that helps generate backend API scaffolding, validates generated code, and refines outputs for cleaner service and controller design.",
-      stack: ["Java", "Spring Boot", "LLM APIs", "Prompt Validation"],
-      status: "AI Project",
-      github: "#",
-      cta: "View Code"
+        "LLM-powered backend system that generates structured API design artifacts (endpoints, DTOs, validation, error handling) from high-level requirements. Implements strict prompt engineering, schema enforcement, and resilient JSON parsing to convert non-deterministic LLM output into strongly typed Java DTOs.",
+      stack: ["Java", "Spring Boot", "OpenAI API", "Structured Output Parsing"],
+      status: "LLM + Backend",
+      github: "https://github.com/rpoddar05/ai-api-assistant",
+      cta: "View Repository"
     },
     {
       title: "Event-Driven Case Management System",
       summary:
-        "Kafka-based distributed systems project modeling patient resolution, case lifecycle, and lab ingestion workflows with idempotent processing, partition-aware design, retries, and DLQ handling.",
+        "Event-driven microservices system using Kafka to model patient resolution, case lifecycle, and lab ingestion workflows. Implements idempotent consumers, partition-aware processing, retry/DLQ handling, and schema-driven event contracts to ensure data consistency and fault tolerance.",
       stack: ["Java", "Spring Boot", "Kafka", "PostgreSQL", "Docker", "Flyway"],
-      status: "Built",
-      github: "#",
-      cta: "View Code"
+      status: "Distributed Systems",
+      github: "https://github.com/rpoddar05/case-service",
+      cta: "View Repository"
     },
     {
       title: "IMAPS Backend Modernization",
@@ -33,8 +33,6 @@ export default function RahulPoddarPortfolio() {
         "Backend modernization work for a centralized assignment and investigation platform focused on REST APIs, Oracle PL/SQL integration, RBAC security, caching, and performance optimization for data-heavy healthcare workflows.",
       stack: ["Java", "Spring Boot", "Oracle", "Spring Security", "Caffeine", "Zipkin"],
       status: "Professional Work",
-      github: "#",
-      cta: "Case Study"
     }
   ];
 
@@ -59,8 +57,7 @@ export default function RahulPoddarPortfolio() {
           bullets: [
             "Owned backend development of IMAPS, a centralized assignment and investigation platform modernizing a legacy public-health MIS system used across multiple disease programs (HIV, Syphilis, Chlamydia, Gonorrhea, Mpox).",
             "Designed Spring Boot REST APIs and service-layer workflows, integrating complex Oracle PL/SQL stored procedures while enforcing secure access control using Spring Security RBAC.",
-            "Improved backend scalability and reduced database load by introducing caching (Spring Cache/Caffeine) for frequently accessed data.",
-            "Diagnosed investigation workflow latency using Zipkin-based tracing with correlation IDs and reduced endpoint latency from ~500ms to ~20–40ms by eliminating redundant writes, adding indexing, and implementing pagination.",
+            "Diagnosed investigation workflow latency using Zipkin-based tracing and improved endpoint performance from ~500ms to ~20–40ms by eliminating redundant writes, adding indexing, and implementing pagination.",
             "Built unit tests using JUnit and Mockito to validate business logic and improve code quality with SonarQube coverage tracking."
           ]
         },
@@ -118,7 +115,7 @@ export default function RahulPoddarPortfolio() {
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <div>
               <div className="text-lg font-semibold tracking-wide">Rahul Poddar</div>
-              <div className="text-sm text-white/70">Senior Backend Engineer</div>
+              <div className="text-sm text-white/70">Senior Software Engineer</div>
             </div>
             <div className="flex flex-wrap gap-4 text-sm text-white/80">
               <a href="#projects" className="transition hover:text-white">Projects</a>
@@ -134,12 +131,13 @@ export default function RahulPoddarPortfolio() {
             <div className="mb-4 inline-flex rounded-full border border-cyan-300/30 bg-cyan-300/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-cyan-200">
               Java • Spring Boot • Distributed Systems • AI Projects
             </div>
-            <h1 className="max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">
-              Backend engineer building scalable systems and practical AI tooling.
+            <h1 className="text-3xl md:text-4xl lg:text-5xl leading-tight">
+              Backend engineer specializing in data-intensive systems, distributed workflows, and production-grade API platforms, now expanding into AI-driven developer tooling.
             </h1>
+
             <p className="mt-5 max-w-2xl text-base leading-7 text-white/75 md:text-lg">
               I build data-intensive APIs, ingestion workflows, secure backend services, and performance-focused enterprise systems.
-              This portfolio showcases production backend experience and AI-oriented engineering projects designed to stand out quickly.
+              This portfolio highlights production backend experience alongside AI and distributed-systems projects.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
@@ -159,9 +157,10 @@ export default function RahulPoddarPortfolio() {
                  rel="noopener noreferrer" 
                  className="rounded-2xl border border-white/20 px-6 py-3 font-medium hover:bg-white/10 transition"
               >
-                Resume (PDF)
+                Resume
               </a>
             </div>
+           
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
               {metrics.map((metric) => (
                 <div key={metric.label} className="rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -178,7 +177,7 @@ export default function RahulPoddarPortfolio() {
               <div className="mt-4 grid gap-3 text-sm text-white/85">
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Production backend experience with real system modernization work</div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Clear impact story around performance, caching, and data-heavy workflows</div>
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Kafka and AI projects that show modern engineering direction</div>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Kafka and AI projects demonstrating modern distributed-system and LLM-integration thinking</div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Strong Java + Spring Boot foundation with pragmatic system design thinking</div>
               </div>
             </div>
@@ -233,14 +232,16 @@ export default function RahulPoddarPortfolio() {
                     </span>
                   ))}
                 </div>
-                <div className="mt-auto pt-6">
-                  <a
-                    href={project.github}
-                    className="inline-flex text-sm font-medium text-cyan-300 transition hover:text-cyan-200 hover:underline"
-                  >
-                    {project.cta} →
-                  </a>
-                </div>
+               {project.github !== "#" && project.cta && (
+                  <div className="mt-auto pt-6">
+                    <a
+                      href={project.github}
+                      className="inline-flex text-sm font-medium text-cyan-300 transition hover:text-cyan-200 hover:underline"
+                    >
+                      {project.cta} →
+                    </a>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -326,7 +327,7 @@ export default function RahulPoddarPortfolio() {
               <a className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 transition hover:bg-white/10" href="https://www.linkedin.com/in/rahul-poddar05">
                 LinkedIn
               </a>
-              <a className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 transition hover:bg-white/10" href="https://github.com/">
+              <a className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 transition hover:bg-white/10" href="https://github.com/rpoddar05">
                 GitHub
               </a>
               <a href="/Rahul_Poddar_Resume.pdf"
